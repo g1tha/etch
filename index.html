@@ -15,12 +15,17 @@
     </div>
     <div class="center">
         <div class="menu">
-            <div>
-                <input type="color" id="color" name="color">
-                <label for="color">color</label>
+            <div calss="color-picker">
+                <input type="color" id="color" name="color" value="#23A4B0" class="color">
             </div>
+            <button class="color btn">Color Mode</button>
+            <button class="rainbow btn">Rainbow Mode</button>
+            <button class="eraser btn">Rraser</button>
+            <button class="lighten btn">Lighten</button>
+            <button class="darken btn">Darken</button>
+            <button class="reset btn">Reset</button>
             <div class="slidecontainer">
-                <label class="slide-label">2 × 2</label>
+                <label for="range" class="slide-label">2 × 2</label>
                 <input type="range" min="2" max="64" value="2" class="slider" id="myRange">
               </div>
         </div>
