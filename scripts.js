@@ -47,7 +47,7 @@ function makeGrid(n) {
     gridItems = Array.from(document.querySelectorAll('.grid-item'));
     gridItems.forEach(e => e.addEventListener('mouseover', drawOver));
     gridItems.forEach(e => e.addEventListener('click', draw));
-    gridItems.forEach(e => e.addEventListener('touchstart', draw, {passive: true}));
+    gridItems.forEach(e => e.addEventListener('touchmove', draw, {passive: true}));
 }
 
 function updateSlider() {
